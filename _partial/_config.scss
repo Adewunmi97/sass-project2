@@ -19,12 +19,3 @@ $f2:'Roboto Mono', monospace;
     text-decoration: none;
     font-family: $f1;
 }
-body {
-    background-image: linear-gradient(to right, $c5, $c6, $c7);
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
-}
