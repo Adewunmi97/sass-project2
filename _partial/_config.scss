@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+  
+
+$c1: #000;
+$c2: #ffffff;
+$c3: #0000cc;
+$c4:#999;
+$c5:#0000ff;
+$c6: #0066ff;
+$c7: #00ccff;
+
+
+$f1:'Raleway', sans-serif;
+$f2:'Roboto Mono', monospace;
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: $f1;
+}
+body {
+    background-image: linear-gradient(to right, $c5, $c6, $c7);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
