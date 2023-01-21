@@ -49,11 +49,46 @@ header {
         color: $c2;
         margin: auto;
         position: relative;
-        width: 40%;
+        width: 45%;
         padding-top: 100px;
         text-align: center;
+        line-height: 1.5;
+        font-weight: 600;
+        height: 100%;
         h1 {
-            font-size: 40px;
+            font-size: 45px;
+        }
+        .p1-description {
+            padding-top: 20px;
+            font-size: 20px;
+        }
+        // .a1-description {
+        //     padding: 17px;
+        //     background-color: $c2;
+        //     width: 100px;
+        //     border-radius: 5px;
+        //     color: $c1;
+        //     font-size: 15px;
+        //     margin-right: 1rem;
+        //     margin-top: 15px;
+        // }
+        // .apply-now-btn2 {
+        //     padding: 17px;
+        //     background-color: $c3;
+        //     width: 100px;
+        //     border-radius: 5px;
+        //     color: $c2;
+        //     font-size: 15px;
+        //     margin-top: 15px;
+        // }
+        .p2-description {
+            font-size: 14px;
+            color: $c5;
+
+        }
+        .p3-description {
+            font-size: 10px;
+            padding-top: 15px;
         }
     }
 }
@@ -64,4 +99,7 @@ header {
         width: 550px;
         height: 300px;
     }
+}
+#objectives {
+    background-color: $c4;
 }
