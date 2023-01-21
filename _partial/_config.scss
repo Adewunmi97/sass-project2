@@ -19,3 +19,11 @@ $f2:'Roboto Mono', monospace;
     text-decoration: none;
     font-family: $f1;
 }
+section {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    gap: 3rem;
+    line-height: 3;
+    transition-duration: 2s;
+}

@@ -1,13 +1,15 @@
 header {
-    background-image: url(../image/black_college.jpeg);
+    background-image:url(../image/black_college.jpeg);
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     .nav {
         background-color: $c1;
         height: 15vh;
         width: 100%;
+        position: fixed;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -34,5 +36,32 @@ header {
                 }    
             }
         }
+    }
+    .index-overlay {
+        background: rgba($color: #000000, $alpha: 1.0);
+        height: 100%;
+        width: 100%;
+        color: $c2;
+        position: absolute;
+        opacity: 0.9;
+    }
+    .description {
+        color: $c2;
+        margin: auto;
+        position: relative;
+        width: 40%;
+        padding-top: 100px;
+        text-align: center;
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
+.intro-img {
+    width: 30%;
+    height: fit-content;
+    img {
+        width: 550px;
+        height: 300px;
     }
 }
