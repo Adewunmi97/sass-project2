@@ -11,3 +11,16 @@
         transform: scale(1.1);
     }
 }
+@mixin button2 {
+    background-color: $c2;
+    width: fit-content;
+    padding: 15px 20px;
+    border-radius: 7px;
+    color: $c3;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+        transition: 2s;
+        transform: scale(1.1);
+    }
+}

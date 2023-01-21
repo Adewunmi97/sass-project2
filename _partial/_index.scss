@@ -62,25 +62,12 @@ header {
             padding-top: 20px;
             font-size: 20px;
         }
-        // .a1-description {
-        //     padding: 17px;
-        //     background-color: $c2;
-        //     width: 100px;
-        //     border-radius: 5px;
-        //     color: $c1;
-        //     font-size: 15px;
-        //     margin-right: 1rem;
-        //     margin-top: 15px;
-        // }
-        // .apply-now-btn2 {
-        //     padding: 17px;
-        //     background-color: $c3;
-        //     width: 100px;
-        //     border-radius: 5px;
-        //     color: $c2;
-        //     font-size: 15px;
-        //     margin-top: 15px;
-        // }
+        .a1-description {
+            @include button2;
+        }
+        .a2-description {
+            @include button1;
+        }
         .p2-description {
             font-size: 14px;
             color: $c5;
@@ -118,11 +105,11 @@ header {
 footer {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     background-color: $c3;
     color: $c2;
     line-height: 2.5rem;
     min-height: 85vh;
+    padding-top: 5%;
     .div1-ft {
         width: 30%;
         img {
@@ -133,8 +120,18 @@ footer {
                     list-style: none;
                 }
             }
-            span {
-                
+        }
+    }
+    .inner-div {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        .div4-ft {
+            h2 {
+                margin-bottom: 30px
+            }
+            a {
+                @include button2;
             }
         }
     } 
