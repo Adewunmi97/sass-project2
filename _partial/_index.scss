@@ -103,6 +103,18 @@ header {
 #objectives {
     background-color: $c4;
 }
+.first-footer {
+    background-color: $c4;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    a {
+        @include button1;
+    }
+}
 footer {
     display: flex;
     justify-content: space-around;
