@@ -103,3 +103,27 @@ header {
 #objectives {
     background-color: $c4;
 }
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $c3;
+    color: $c2;
+    line-height: 2.5rem;
+    min-height: 85vh;
+    .div1-ft {
+        width: 30%;
+        img {
+            height: 30px;
+            width: 180px;
+            ul {
+                li {
+                    list-style: none;
+                }
+            }
+            span {
+                
+            }
+        }
+    } 
+}
