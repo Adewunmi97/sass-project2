@@ -18,12 +18,23 @@ $f2:'Roboto Mono', monospace;
     margin: 0;
     text-decoration: none;
     font-family: $f1;
+    overflow-x: hidden;
 }
 section {
     display: flex;
     justify-content: space-around;
+    gap: 4rem;
     padding-top: 50px;
-    gap: 3rem;
-    line-height: 3;
+    line-height: 2.5;
     transition-duration: 2s;
+    font-size: 14px;
+     img {
+        @include responsive-image;
+    }
 }
+// ul {
+//     list-style: none;
+// }
+// ol {
+//     list-style: 1;
+// }

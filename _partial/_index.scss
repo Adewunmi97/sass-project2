@@ -1,11 +1,4 @@
-header {
-    background-image:url(../image/black_college.jpeg);
-    width: 100%;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    .nav {
+ .nav {
         background-color: $c1;
         height: 15vh;
         width: 100%;
@@ -13,6 +6,7 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        z-index: 2;
         img {
             height: 30px;
             width: 180px;
@@ -28,67 +22,117 @@ header {
                 font-size: 11px;
                 font-weight: 800;
                 &.apply-now-btn {
-                    padding: 17px;
-                    background-color: $c3;
-                    width: 100px;
-                    border-radius: 5px;
-                    text-align: center;
-                }    
+                    @include button1;
+                    font-weight: 800;
+                }   
             }
         }
     }
+
     .index-overlay {
-        background: rgba($color: #000000, $alpha: 1.0);
-        height: 100%;
+        background: rgba($color: $c1, $alpha: 1.0);
+        height: 100vh;
         width: 100%;
-        color: $c2;
         position: absolute;
         opacity: 0.9;
     }
-    .description {
-        color: $c2;
-        margin: auto;
-        position: relative;
-        width: 45%;
-        padding-top: 100px;
-        text-align: center;
-        line-height: 1.5;
-        font-weight: 600;
-        height: 100%;
-        h1 {
-            font-size: 45px;
-        }
-        .p1-description {
-            padding-top: 20px;
-            font-size: 20px;
-        }
-        .a1-description {
-            @include button2;
-        }
-        .a2-description {
-            @include button1;
-        }
-        .p2-description {
-            font-size: 14px;
-            color: $c5;
+    .banner {
+        background-image:url(../image/black_college.jpeg);
+            width: 100%;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
 
+            .description {
+                color: $c2;
+                margin: auto;
+                width: 45%;
+                text-align: center;
+                line-height: 1.5;
+                font-weight: 600;
+                height: 100%;
+                z-index: 1;
+                h1 {
+                    font-size: 45px;
+                }
+                .p1-description {
+                    font-size: 20px;
+                }
+                .a-div-des {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-top: 40px;
+                    .a1-description {
+                        display: block;
+                        @include button2;
+                    }
+                    .a2-description {
+                        display: block;
+                        @include button1;
+                    }
+                }
+                .p2-description {
+                    font-size: 14px;
+                    color: $c5;
+                    padding-top: 25px;
+        
+                }
+                .p3-description {
+                    font-size: 11px;
+                    padding-top: 15px;
+                }
+            }
         }
-        .p3-description {
-            font-size: 10px;
-            padding-top: 15px;
+#introduction {
+    padding: 4rem 3rem;
+    .intro-img {
+        width: 50%;
+        img {
+            @include responsive-image;
         }
     }
-}
-.intro-img {
-    width: 30%;
-    height: fit-content;
-    img {
-        width: 550px;
-        height: 300px;
+    .intro-txt {
+        width: 50%;
     }
 }
 #objectives {
     background-color: $c4;
+    padding: 4rem 3rem;
+    .obj-txt {
+        width: 50%;
+    }
+}
+#Kpis {
+    padding: 4rem 3rem;
+    .kpis-img {
+        width: 50%;
+        img {
+            height: 600px;
+            width: 1000px;
+        }
+    }
+    .kpis-txt {
+        width: 50%;
+    }
+}
+#eligible {
+    padding: 4rem 3rem;
+    background-color: $c4;
+    .eligible-txt {
+        width: 70%;
+    }
+}
+.other-news {
+    width: 100%;
+    min-height: 120vh;
+    line-height: 1.5rem;
+    padding: 6rem 3rem;
+    h1 {
+        padding: 3rem 0;
+    }
 }
 .first-footer {
     background-color: $c4;
@@ -105,21 +149,34 @@ header {
 footer {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: $c3;
     color: $c2;
     line-height: 2.5rem;
     min-height: 85vh;
-    padding-top: 5%;
+    padding: 4rem;
+    a {
+        color: $c2;
+    }
     .div1-ft {
-        width: 30%;
+        width: 25%;
+        line-height: 1.5rem;
         img {
             height: 30px;
             width: 180px;
-            ul {
-                li {
-                    list-style: none;
-                }
-            }
+        }
+        .list-icon {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .social-links {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            font-size: 20px;
+            margin-top: 50px;
+        }
         }
     }
     .inner-div {
@@ -128,11 +185,19 @@ footer {
         justify-content: space-around;
         .div4-ft {
             h2 {
-                margin-bottom: 30px
+                margin-bottom: 40px
             }
-            a {
-                @include button2;
+            a { 
+            background-color: $c2;
+            padding: 13px;
+            border-radius: 7px;
+            color: $c1;
+            font-weight: 600;
+            cursor: pointer;
+            &:hover {
+                transition: 2s;
+                transform: scale(1.1);
             }
         }
     } 
-}
+ }

@@ -1,10 +1,11 @@
 @mixin button1 {
     background-color: $c3;
-    width: fit-content;
+    width: 100px;
     padding: 15px 20px;
     border-radius: 7px;
     color: $c2;
     font-weight: 600;
+    text-align: center;
     cursor: pointer;
     &:hover {
         transition: 2s;
@@ -13,14 +14,25 @@
 }
 @mixin button2 {
     background-color: $c2;
-    width: fit-content;
+    width: 100px;
     padding: 15px 20px;
     border-radius: 7px;
-    color: $c3;
+    color: $c1;
     font-weight: 600;
     cursor: pointer;
     &:hover {
         transition: 2s;
         transform: scale(1.1);
     }
+}
+@mixin a-hover {
+    a:hover {
+        transition: 2s;
+        transform: scale(1.1);
+    }
+}
+@mixin responsive-image {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }
